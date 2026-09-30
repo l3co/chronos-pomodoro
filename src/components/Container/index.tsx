@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Container.module.css';
+import styles from './styles.module.css';
 
 type ContainerProps = {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ export function Container({ children }: ContainerProps) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-          {children}
+        {children}
       </div>
     </div>
   );
